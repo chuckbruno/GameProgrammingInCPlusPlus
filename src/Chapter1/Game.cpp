@@ -442,7 +442,7 @@ void Game::GenerateBalls(std::vector<Ball>& balls)
 	{
 		Ball ball;
 		ball.pos = { static_cast<float>((rand()) % 10 * i * 12) , static_cast<float>(rand() % 10 * 3) };
-		ball.velocity = { static_cast<float>(rand() % 10 * 15) , static_cast<float>(rand() % 100 * 9) };
+		ball.velocity = { static_cast<float>(rand() % 10 + 150) , static_cast<float>(rand() % 100 + 90) };
 		balls.push_back(std::move(ball));
 	}
 }
